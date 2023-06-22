@@ -14,9 +14,9 @@
 body {
     height: 100%;
     background-image: url(imagens/LUMINARIAPAGINAPRICIPAL2.jpg);
-    background-size: 100% 100%;
+    background-size: cover;
     background-position: center top;
-    background-repeat: repeat;
+    background-repeat: no-repeat;
 }
 
 header {
