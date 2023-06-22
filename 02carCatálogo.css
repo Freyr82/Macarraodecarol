@@ -1,6 +1,12 @@
 @charset "UTF-8";
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
 :root {
     --cor0: #DE6A71;
     --cor1: #FDB32D;
@@ -8,12 +14,7 @@
     --cor3: #4D7F42;
     --cor4: #DB2D36;
     --footer: black;
-
     --font-family: 'Bebas Neue', sans-serif;    
-}
-
-body {
-
 }
 
 header {
@@ -23,7 +24,7 @@ header {
     color: white;
     font-size: 80px;
     height: 140px;
-    width: 1918px;
+    width: 100%;
     margin: -8px;
     padding: 1px;
     padding-bottom: 83px;
@@ -32,9 +33,9 @@ header {
 nav {
     background-color: #FDB32D;
     font-family: var(--font-family);
-    font-size: 40px;
+    font-size: 45px;
     text-align: center;
-    width: auto;
+    width: 100%;
     height: 60px;
     margin: -8px;
     padding-top: 8px;
@@ -49,13 +50,45 @@ a {
     border-color: var(--footer);
 }
 
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+
+
+
+img{
+    width: 165px;
+    height: 205px;
+}
+
+.flex{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top:15px;
+
+}
+#catalogo{
+    flex-direction: column;
+    width:50%;
+    gap:20px;
+}
+
+.linha-catalogo{
+    align-items: center;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    
+}
+
 footer {
     background-color: var(--footer);
     color: white;
-    text-align: center;
-    height: 30px;
-    padding: 1px;
-    margin: -8px;
-    margin-top: 79px;
-    padding-bottom: 11px;
+    height: 13px;
+    padding: 5px;
+    margin-top: 5px;
 }
